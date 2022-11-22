@@ -53,7 +53,7 @@ int BitmapUtils::processBitmap(JNIEnv *env,jobject bitmap,jstring modelPath){
     arma::vec v(xPixel, w * h, false, false);
     int result = model->predict(v);
     LOGD("预测结果%s", std::to_string(result).c_str());
-    doOther(model);
+    //doOther(model);
     return result;
 }
 
